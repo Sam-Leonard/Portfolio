@@ -1,0 +1,15 @@
+.primary-nav {
+  display: flex;
+
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  li {
+    list-style: none;
+    padding: 5px 0;
+  }
+}

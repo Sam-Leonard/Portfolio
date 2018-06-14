@@ -1,0 +1,33 @@
+.navbar {
+  z-index: 2;
+  position: fixed;
+  background-color: #EDEAE5;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  right: 0;
+
+
+}
+.primary-nav {
+  display: flex;
+}
+.primary-nav ul {
+    display: flex;
+    flex-direction: column;
+  
+  }
+.primary-nav li {
+    list-style: none;
+    padding: 5px 0;
+  }
+.cover {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 500px;
+  background-color: #9FEDD7;
+}
+.cover img {
+    
+  }
