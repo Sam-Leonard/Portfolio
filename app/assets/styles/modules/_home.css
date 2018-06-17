@@ -1,11 +1,25 @@
 .home {
-  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: red;
-  visibility: visible;
+  background-color: #FBF7F5;
+
+  &--hidden {
+    display: none;
+    overflow: hidden;
+  }
+
+  &__img {
+    margin-right: 80px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 45px black;
+  }
 }

@@ -1,12 +1,14 @@
-let home = document.querySelector('#home'),
-let about = document.querySelector('#about'),
-let projects = document.querySelector('#projects'),
-let resume = document.querySelector('#resume'),
+let home = document.querySelector('#home');
+let homeSection = document.querySelector('#home-section');
+let about = document.querySelector('#about');
+let projects = document.querySelector('#projects');
+let resume = document.querySelector('#resume');
 let contact = document.querySelector('#contact');
 
   home.addEventListener('click', function() {
-    home.classList.toggle('home');
-    home.style.visibility = 'visible';
+    console.log('clicked');
+    homeSection.classList.toggle('home--hidden');
+    homeSection.classList.toggle('home');
     about.classList.toggle('about');
     about.style.visibility = 'hidden';
     projects.classList.toggle('projects');
@@ -17,7 +19,7 @@ let contact = document.querySelector('#contact');
     contact.style.visibility = 'hidden';
   });
 
-  about.addEventListener('click', function() {
+    about.addEventListener('click', function() {
     home.classList.toggle('home');
     home.style.visibility = 'hidden';
     about.classList.toggle('about');
@@ -29,6 +31,8 @@ let contact = document.querySelector('#contact');
     contact.classList.toggle('contact');
     contact.style.visibility = 'hidden';
   });
+
+
 
 
 

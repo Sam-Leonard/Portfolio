@@ -7,7 +7,7 @@
   bottom: 0;
   right: 0;
   background-color: green;
-  /* visibility: hidden; */
+  visibility: hidden; 
 
   &__header {
     width: 88%;
