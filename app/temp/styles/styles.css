@@ -1,13 +1,47 @@
+a {
+  text-decoration: none;
+  color: #FFF;
+ }
+a:visited {
+  text-decoration: none;
+ }
+a:hover {
+  text-decoration: none;
+ }
+a:focus {
+ text-decoration: none;
+ }
+a:hover, a:active {
+  text-decoration: none;
+ }
 .navbar {
   z-index: 2;
-  display: inline-block;
+  display: flex;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
+  right: 0;
+  width: 70px;
+  height: 100%;
+  padding: 10px;
   background-color: black;
   position: fixed;
 }
+.navbar ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.navbar li {
+    text-transform: uppercase;
+    font-size: .9rem;
+    list-style: none;
+    padding: 25px 0 25px 0;
+    color: #FFF;
+  }
+.navbar li a {
+      text-decoration: none;
+    }
 .home {
   position: absolute;
   height: 100%;
@@ -16,6 +50,95 @@
   right: 0;
   left: 0;
   bottom: 0;
-  padding-top: 20px;
   background-color: red;
+  visibility: visible;
+}
+.about {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  visibility: hidden;
+}
+.about__container {
+    display: flex;
+
+  }
+.about__sub-container1 {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+  }
+.about__sub-container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 100px;
+  }
+.about--header {
+    text-align: center;
+  }
+.about--text {
+    text-align: center;
+  }
+.projects {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: green;
+}
+/* visibility: hidden; */
+.projects__header {
+    width: 88%;
+  }
+.projects__container {
+    margin-top: 100px;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+  }
+.projects__sub-container1 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+.projects__sub-container2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+.projects h3 {
+    text-align: center;
+  }
+.resume {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  visibility: hidden;
+}
+.contact {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: purple;
+  visibility: hidden;
 }

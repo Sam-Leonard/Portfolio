@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  visibility: hidden; 
+
+  &__container {
+    display: flex;
+
+  }
+
+  &__sub-container1 {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+  }
+
+  &__sub-container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 100px;
+  }
+
+  &--header {
+    text-align: center;
+  }
+
+  &--text {
+    text-align: center;
+  }
+}
