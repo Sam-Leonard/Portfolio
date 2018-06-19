@@ -1,0 +1,29 @@
+.main-container {
+
+  &__home {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background-color: #FBF7F5; */
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__about {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255 0.5);
+  }
+}

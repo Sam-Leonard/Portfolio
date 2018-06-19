@@ -1,3 +1,6 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
 a {
   text-decoration: none;
   color: #FFF;
@@ -14,12 +17,15 @@ a:focus {
 a:hover, a:active {
   text-decoration: none;
  }
+.hidden {
+  display: none;
+  overflow: hidden;
+}
 .navbar {
   z-index: 2;
   display: flex;
   top: 0;
   right: 0;
-  width: 70px;
   height: 100%;
   padding: 10px;
   background-color: black;
@@ -44,24 +50,9 @@ a:hover, a:active {
     }
 .home {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #FBF7F5;
+  border: 3px solid red;
 }
-.home--hidden {
-    display: none;
-    overflow: hidden;
-  }
 .home__img {
-    margin-right: 80px;
     border-radius: 2%;
     box-shadow: 10px 10px 45px black;
   }
@@ -110,7 +101,7 @@ a:hover, a:active {
   background-color: green;
   visibility: hidden;
 }
-.projects__header {
+.projects--header {
     width: 88%;
   }
 .projects__container {
@@ -154,3 +145,28 @@ a:hover, a:active {
   background-color: purple;
   visibility: hidden;
 }
+.main-container__home {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background-color: #FBF7F5; */
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+  }
+.main-container__about {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255 0.5);
+  }

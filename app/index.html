@@ -7,6 +7,7 @@
   <title>Sam - Portfolio</title>
   <meta name="keywords" content="Front end web developmer, web development, portfolio, freelance">
   <meta name="description" content="Website design portfolio. Freelance front end web developer.">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
   <link rel="stylesheet" href="temp/styles/styles.css">
 
@@ -14,26 +15,25 @@
 
 
 <body>
-  <div class="main-container">
+  <div id="section-container-home" class="main-container main-container__home">
     <div class="navbar">
 
-        <ul>
-          <li><a href="#home-section" id="home">home</li>
-          <li><a href="#about">about</li>
-          <li><a href="#projects">projects</li>
-          <li><a href="#resume">resume</li>
-          <li><a href="#contact">contact</li>
+      <ul>
+        <li><a href="#home-section" id="home">home</li>
+          <li><a href="#about-section" id="about">about</li>
+          <li><a href="#projects-section" id="projects">projects</li>
+          <li><a href="#resume-section" id="resume">resume</li>
+          <li><a href="#contact-section" id="contact">contact</li>
         </ul>
     </div>
 
     <div id="home-section" class="home">
-
         <img class="home__img" src="assets/images/chattanooga.png" alt="">
-
     </div>
 
-    <div id="about">
-      <div class="about about__container">
+  <div id="section-container-about" class="main-container main-container__about hidden">
+    <div id="about-section" class="about hidden">
+      <div class="about__container">
         <div class="about__sub-container1">
           <h3>skills</h3>
         </div>
@@ -43,10 +43,11 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="projects">
-      <div class="projects">
-        <h3 class="projects__header">projects</h3>
+  <div id="section-container-projects" class="main-container main-container__projects hidden">
+    <div id="projects-section" class="projects">
+      <h3 class="projects--header">projects</h3>
         <div class="projects__container">
           <div class="projects__sub-container1">
             beep
@@ -58,17 +59,22 @@
       </div>
     </div>
 
-    <div id="resume">
-      <div class="resume">
+  <div id="section-container-resume" class="main-container main-container__resume hidden">
+    <div id="resume-section" class="resume">
+      <div class="">
 
       </div>
     </div>
+  </div>
 
-    <div id="contact">
-      <div class="contact">
+  <div id="section-container-contact" class="main-container main-container__contact hidden">
+    <div id="contact-section" class="contact">
+      <div class="">
 
       </div>
     </div>
+  </div>
+
   </div>
 
 
