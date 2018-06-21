@@ -24,6 +24,42 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255 0.5);
+    background-color: green;
+  }
+
+  &__projects {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+  }
+
+  &__resume {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: yellow;
+  }
+
+  &__contact {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: red;
   }
 }

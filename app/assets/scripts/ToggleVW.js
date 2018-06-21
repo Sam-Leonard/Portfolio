@@ -14,43 +14,79 @@ let resumeSection = document.querySelector('#resume-section');
 let contact = document.querySelector('#contact');
 let contactSection = document.querySelector('#contact-section');
 
-about.addEventListener ('click', function() {
-
-  if (aboutSection.classList.contains('.hidden')) {
-      aboutSection.classList.remove('.hidden');
-    } else {
-        console.log('alala');
-    }
-
-  if (sectionContAbout.classList.contains('.hidden')) {
-      sectionContAbout.classList.remove('.hidden');
-    } else {
-        console.log('lololo');
-  }
-
-  if (homeSection.classList.contains('.hidden')) {
-      console.log('home contains hidden')
-    } else {
-        homeSection.classList.add('.hidden');
-    }
-
-    if (sectionContHome.classList.contains('.hidden')) {
-        console.log('home contains hidden')
-      } else {
-          sectionContHome.classList.add('.hidden');
-      }
-
-
-  });
 
 home.addEventListener ('click', function() {
+  if (homeSection.classList.contains('hidden')) {
+  homeSection.classList.remove('hidden');
+  sectionContHome.classList.remove('hidden');
+  aboutSection.classList.add('hidden');
+  sectionContAbout.classList.add('hidden');
+  projectsSection.classList.add('hidden');
+  sectionContProjects.classList.add('hidden');
+  resumeSection.classList.add('hidden');
+  sectionContResume.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  sectionContContact.classList.add('hidden');
+  }
+});
 
-    if (homeSection.classList.contains('hidden')) {
-      homeSection.classList.remove('hidden');
-      aboutSection.classList.add('hidden');
-      sectionContAbout.classList.add('hidden');
-      sectionContHome.classList.remove('hidden');
-    } else {
-        console.log('alala');
-    }
-  });
+about.addEventListener ('click', function() {
+  if (aboutSection.classList.contains('hidden')) {
+  aboutSection.classList.remove('hidden');
+  sectionContAbout.classList.remove('hidden');
+  homeSection.classList.add('hidden');
+  sectionContHome.classList.add('hidden');
+  projectsSection.classList.add('hidden');
+  sectionContProjects.classList.add('hidden');
+  resumeSection.classList.add('hidden');
+  sectionContResume.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  sectionContContact.classList.add('hidden');
+  }
+});
+
+projects.addEventListener ('click', function() {
+  if (projectsSection.classList.contains('hidden')) {
+  projectsSection.classList.remove('hidden');
+  sectionContProjects.classList.remove('hidden');
+  homeSection.classList.add('hidden');
+  sectionContHome.classList.add('hidden');
+  aboutSection.classList.add('hidden');
+  sectionContAbout.classList.add('hidden');
+  resumeSection.classList.add('hidden');
+  sectionContResume.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  sectionContContact.classList.add('hidden');
+  }
+});
+
+resume.addEventListener ('click', function() {
+  if (resumeSection.classList.contains('hidden')) {
+  resumeSection.classList.remove('hidden');
+  sectionContResume.classList.remove('hidden');
+  homeSection.classList.add('hidden');
+  sectionContHome.classList.add('hidden');
+  aboutSection.classList.add('hidden');
+  sectionContAbout.classList.add('hidden');
+  projectsSection.classList.add('hidden');
+  sectionContProjects.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  sectionContContact.classList.add('hidden');
+
+  }
+});
+
+contact.addEventListener ('click', function() {
+  if (contactSection.classList.contains('hidden')) {
+  contactSection.classList.remove('hidden');
+  sectionContContact.classList.remove('hidden');
+  homeSection.classList.add('hidden');
+  sectionContHome.classList.add('hidden');
+  aboutSection.classList.add('hidden');
+  sectionContAbout.classList.add('hidden');
+  projectsSection.classList.add('hidden');
+  sectionContProjects.classList.add('hidden');
+  resumeSection.classList.add('hidden');
+  sectionContResume.classList.add('hidden');
+  }
+});

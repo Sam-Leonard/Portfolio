@@ -18,8 +18,9 @@ a:hover, a:active {
   text-decoration: none;
  }
 .hidden {
-  display: none;
-  overflow: hidden;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 .navbar {
   z-index: 2;
@@ -58,15 +59,7 @@ a:hover, a:active {
   }
 .about {
   display: flex;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: blue;
-  visibility: hidden;
+  border: 3px solid blue;
 }
 .about__container {
     display: flex;
@@ -91,15 +84,7 @@ a:hover, a:active {
     text-align: center;
   }
 .projects {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: green;
-  visibility: hidden;
+  display: flex;
 }
 .projects--header {
     width: 88%;
@@ -124,26 +109,10 @@ a:hover, a:active {
     text-align: center;
   }
 .resume {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: white;
-  visibility: hidden;
+  display: flex;
 }
 .contact {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: purple;
-  visibility: hidden;
+  display: flex;
 }
 .main-container__home {
     display: flex;
@@ -168,5 +137,38 @@ a:hover, a:active {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255 0.5);
+    background-color: green;
+  }
+.main-container__projects {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+  }
+.main-container__resume {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: yellow;
+  }
+.main-container__contact {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: red;
   }
