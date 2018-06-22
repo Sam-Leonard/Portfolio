@@ -1,4 +1,4 @@
-.navbar {
+nav {
   z-index: 99;
   display: flex;
   top: 0;
@@ -21,10 +21,10 @@
     font-size: .9rem;
     list-style: none;
     padding: 25px 0 25px 0;
-    color: #1e4258;
+    color: #FFF;
+  }
 
-    a {
-      text-decoration: none;
+  li:hover {
+      cursor: pointer;
     }
   }
-}

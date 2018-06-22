@@ -1,6 +1,7 @@
 .main-container {
 
   &__home {
+    border: 3px solid blue;
     display: flex;
     position: absolute;
     height: 100%;
@@ -16,6 +17,7 @@
   }
 
   &__about {
+
     display: flex;
     position: absolute;
     height: 100%;
@@ -30,6 +32,7 @@
 
   &__projects {
     display: flex;
+    flex-direction: column;
     position: absolute;
     height: 100%;
     width: 100%;

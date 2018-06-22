@@ -19,9 +19,9 @@ home.addEventListener ('click', function() {
   if (homeSection.classList.contains('hidden')) {
   homeSection.classList.remove('hidden');
   sectionContHome.classList.remove('hidden');
-  aboutSection.classList.add('hidden');
+
   sectionContAbout.classList.add('hidden');
-  projectsSection.classList.add('hidden');
+
   sectionContProjects.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');
@@ -31,12 +31,12 @@ home.addEventListener ('click', function() {
 });
 
 about.addEventListener ('click', function() {
-  if (aboutSection.classList.contains('hidden')) {
-  aboutSection.classList.remove('hidden');
+  if (sectionContAbout.classList.contains('hidden')) {
+
   sectionContAbout.classList.remove('hidden');
   homeSection.classList.add('hidden');
   sectionContHome.classList.add('hidden');
-  projectsSection.classList.add('hidden');
+
   sectionContProjects.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');
@@ -46,12 +46,12 @@ about.addEventListener ('click', function() {
 });
 
 projects.addEventListener ('click', function() {
-  if (projectsSection.classList.contains('hidden')) {
-  projectsSection.classList.remove('hidden');
+  if (sectionContProjects.classList.contains('hidden')) {
+
   sectionContProjects.classList.remove('hidden');
   homeSection.classList.add('hidden');
   sectionContHome.classList.add('hidden');
-  aboutSection.classList.add('hidden');
+
   sectionContAbout.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');
@@ -66,9 +66,9 @@ resume.addEventListener ('click', function() {
   sectionContResume.classList.remove('hidden');
   homeSection.classList.add('hidden');
   sectionContHome.classList.add('hidden');
-  aboutSection.classList.add('hidden');
+
   sectionContAbout.classList.add('hidden');
-  projectsSection.classList.add('hidden');
+
   sectionContProjects.classList.add('hidden');
   contactSection.classList.add('hidden');
   sectionContContact.classList.add('hidden');
@@ -82,9 +82,9 @@ contact.addEventListener ('click', function() {
   sectionContContact.classList.remove('hidden');
   homeSection.classList.add('hidden');
   sectionContHome.classList.add('hidden');
-  aboutSection.classList.add('hidden');
+
   sectionContAbout.classList.add('hidden');
-  projectsSection.classList.add('hidden');
+  
   sectionContProjects.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');

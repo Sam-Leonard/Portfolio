@@ -1,6 +1,6 @@
 .hidden {
   position: absolute;
-  left: -1200px;
+
   opacity: 0;
   display: none;
   transition: all .3s ease;

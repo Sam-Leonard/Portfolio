@@ -1,30 +1,38 @@
 .projects {
-  display: flex;
 
   &--header {
-    width: 88%;
+    border: 3px solid blue;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 96%;
+    justify-content: center;
+    margin: 1% 0 0 0;
+    padding: 0;
   }
 
   &__container {
-    margin-top: 100px;
-    width: 88%;
+    margin: 0;
+    padding: 0;
+    border: 3px solid red;
+    width: 96%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   &__sub-container1 {
+    border: 3px solid yellow;
     display: flex;
     flex: 1;
     justify-content: center;
   }
 
   &__sub-container2 {
+    border: 3px solid purple;
     display: flex;
     flex: 1;
     justify-content: center;
-  }
-
-  h3 {
-    text-align: center;
   }
 }

@@ -1,27 +1,25 @@
 .home {
+  border: 3px solid yellow;
   display: flex;
-  overflow: hidden;
-  flex-direction: row;
+
+
 
   &__title-container {
-    position: absolute;
+    border: 3px solid green;
     display: flex;
     flex-direction: column;
   }
 
   &__heading {
+    border: 3px solid purple;
     font-size: 4rem;
-
     color: #1e4258;
   }
 
   &__sub-heading {
+    border: 3px solid red;
     font-size: 3rem;
-
     color: #1e4258;
   }
 
-  img {
-
-  }
 }

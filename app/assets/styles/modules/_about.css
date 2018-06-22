@@ -1,6 +1,4 @@
 .about {
-  display: flex;
-  z-index: 1;
 
   &__container {
     display: flex;
@@ -8,17 +6,19 @@
   }
 
   &__sub-container1 {
+    border: 3px solid yellow;
     display: flex;
     justify-content: center;
     flex: 2;
   }
 
   &__sub-container2 {
+    border: 3px solid blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex: 1;
-    margin-right: 100px;
+    margin-right: 81px;
   }
 
   &--header {
