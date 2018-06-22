@@ -1,5 +1,5 @@
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 a {
   text-decoration: none;
@@ -17,19 +17,24 @@ a:focus {
 a:hover, a:active {
   text-decoration: none;
  }
+* {
+  box-sizing: border-box;
+}
 .hidden {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  position: absolute;
+  left: -1200px;
+  opacity: 0;
+  display: none;
+  transition: all .3s ease;
 }
 .navbar {
-  z-index: 2;
+  z-index: 99;
   display: flex;
   top: 0;
   right: 0;
   height: 100%;
   padding: 10px;
-  background-color: black;
+  background-color: #4c495d;
   position: fixed;
 }
 .navbar ul {
@@ -44,22 +49,37 @@ a:hover, a:active {
     font-size: .9rem;
     list-style: none;
     padding: 25px 0 25px 0;
-    color: #FFF;
+    color: #1e4258;
   }
 .navbar li a {
       text-decoration: none;
     }
 .home {
   display: flex;
-  border: 3px solid red;
+  overflow: hidden;
+  flex-direction: row;
 }
-.home__img {
-    border-radius: 2%;
-    box-shadow: 10px 10px 45px black;
+.home__title-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+.home__heading {
+    font-size: 4rem;
+
+    color: #1e4258;
+  }
+.home__sub-heading {
+    font-size: 3rem;
+
+    color: #1e4258;
+  }
+.home img {
+
   }
 .about {
   display: flex;
-  border: 3px solid blue;
+  z-index: 1;
 }
 .about__container {
     display: flex;
@@ -123,10 +143,10 @@ a:hover, a:active {
     right: 0;
     left: 0;
     bottom: 0;
-    /* background-color: #FBF7F5; */
-    background-color: black;
+    background-color: #d1d7e0;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease;
   }
 .main-container__about {
     display: flex;
@@ -137,7 +157,8 @@ a:hover, a:active {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: green;
+    background-color: #d1d7e0;
+    transition: all .3s ease;
   }
 .main-container__projects {
     display: flex;
@@ -148,7 +169,9 @@ a:hover, a:active {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: blue;
+    background-color: #d1d7e0;
+    transition: all .3s ease-out;
+
   }
 .main-container__resume {
     display: flex;
@@ -159,7 +182,8 @@ a:hover, a:active {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: yellow;
+    background-color: #d1d7e0;
+    transition: all .3s ease-out;
   }
 .main-container__contact {
     display: flex;
@@ -170,5 +194,6 @@ a:hover, a:active {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: red;
+    background-color: #d1d7e0;
+    transition: all .3s ease-out;
   }

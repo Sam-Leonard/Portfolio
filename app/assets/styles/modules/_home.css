@@ -1,9 +1,27 @@
 .home {
   display: flex;
-  border: 3px solid red;
+  overflow: hidden;
+  flex-direction: row;
 
-  &__img {
-    border-radius: 2%;
-    box-shadow: 10px 10px 45px black;
+  &__title-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-size: 4rem;
+
+    color: #1e4258;
+  }
+
+  &__sub-heading {
+    font-size: 3rem;
+
+    color: #1e4258;
+  }
+
+  img {
+
   }
 }

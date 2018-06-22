@@ -1,5 +1,7 @@
 .hidden {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  position: absolute;
+  left: -1200px;
+  opacity: 0;
+  display: none;
+  transition: all .3s ease;
 }

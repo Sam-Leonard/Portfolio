@@ -9,10 +9,10 @@
     right: 0;
     left: 0;
     bottom: 0;
-    /* background-color: #FBF7F5; */
-    background-color: black;
+    background-color: #d1d7e0;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease;
   }
 
   &__about {
@@ -24,7 +24,8 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: green;
+    background-color: #d1d7e0;
+    transition: all .3s ease;
   }
 
   &__projects {
@@ -36,7 +37,9 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: blue;
+    background-color: #d1d7e0;
+    transition: all .3s ease-out;
+
   }
 
   &__resume {
@@ -48,7 +51,8 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: yellow;
+    background-color: #d1d7e0;
+    transition: all .3s ease-out;
   }
 
   &__contact {
@@ -60,6 +64,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: red;
+    background-color: #d1d7e0;
+    transition: all .3s ease-out;
   }
 }
