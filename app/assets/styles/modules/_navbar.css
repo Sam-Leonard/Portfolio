@@ -5,7 +5,7 @@ nav {
   right: 0;
   height: 100%;
   padding: 10px;
-  background-color: #4c495d;
+  background-color: #181818;
   position: fixed;
 
   ul {
@@ -21,7 +21,8 @@ nav {
     font-size: .9rem;
     list-style: none;
     padding: 25px 0 25px 0;
-    color: #FFF;
+    color: #00d8ff;
+    font-weight: 700;
   }
 
   li:hover {

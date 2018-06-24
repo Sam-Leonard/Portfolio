@@ -22,46 +22,64 @@
       <li id="projects">projects</li>
       <li id="resume">resume</li>
       <li id="contact">contact</li>
-      </ul>
+    </ul>
   </nav>
   <div id="section-container-home" class="main-container main-container__home">
 
     <div id="home-section" class="home">
       <div class="home__title-container">
         <h2 class="home__heading">Sam Leonard</h2>
-          <h3 class="home__sub-heading">Web developer</h3>
+        <h3 class="home__sub-heading">Web developer</h3>
       </div>
-        <img src="" alt="">
+      <img src="" alt="">
     </div>
   </div>
 
   <div id="section-container-about" class="main-container main-container__about hidden">
 
-      <div class="about__container">
-        <div class="about__sub-container1">
-          <h3>skills</h3>
-        </div>
-        <div class="about__sub-container2">
-          <h3 class="about--header">about me</h3>
-          <p class="about--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="about__container">
+      <div class="about__sub-container1">
+        <h3>skills</h3>
+        <div id="bars">
+          <div class="bar" data-percent="90">
+            <h4>HTML5</h4>
+            <canvas class="bar-circle" width="180" height="180"></canvas>
+          </div>
+          <div class="bar" data-percent="90">
+            <h4>CSS</h4>
+            <canvas class="bar-circle" width="180" height="180"></canvas>
+          </div>
+          <div class="bar" data-percent="65">
+            <h4>JavaScript</h4>
+            <canvas class="bar-circle" width="180" height="180"></canvas>
+          </div>
+          <div class="bar" data-percent="70">
+            <h4>WordPress</h4>
+            <canvas class="bar-circle" width="180" height="180"></canvas>
+          </div>
         </div>
       </div>
+      <div class="about__sub-container2">
+        <img src="assets/images/samabout1.jpg" alt="Sam Leonard">
+        <p>Hi, I'm Sam! I am a web developer and graphic designer in Chattanooga, TN. I design and build personalized websites, through collaboration, to ensure your website is exactly what you envisioned. My free time is spent with my wife and friends adventuring outdoors or just out by the pool. I enjoy a variety of activities, but the company is whats most important to me!</p>
+      </div>
+    </div>
 
   </div>
 
   <div id="section-container-projects" class="main-container main-container__projects hidden">
-    
-      <h3 class="projects--header">projects</h3>
-        <div class="projects__container">
-          <div class="projects__sub-container1">
-            beep
-          </div>
-          <div class="projects__sub-container2">
-            boop
-          </div>
-        </div>
+
+    <h3 class="projects--header">projects</h3>
+    <div class="projects__container">
+      <div class="projects__sub-container1">
+        beep
+      </div>
+      <div class="projects__sub-container2">
+        boop
       </div>
     </div>
+  </div>
+  </div>
 
   <div id="section-container-resume" class="main-container main-container__resume hidden">
     <div id="resume-section" class="resume">
@@ -84,7 +102,8 @@
 
 
 
-<script src="temp/scripts/ToggleVW.js"></script>
+  <script src="temp/scripts/ToggleVW.js"></script>
+  <script src="temp/scripts/Skills.js"></script>
 </body>
 
 </html>

@@ -13,13 +13,13 @@
   &__heading {
     border: 3px solid purple;
     font-size: 4rem;
-    color: #1e4258;
+    color: #FFF;
   }
 
   &__sub-heading {
     border: 3px solid red;
     font-size: 3rem;
-    color: #1e4258;
+    color: #FFF;
   }
 
 }

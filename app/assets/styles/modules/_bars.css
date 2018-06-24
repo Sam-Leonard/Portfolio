@@ -1,0 +1,33 @@
+#bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+	margin: 2em auto;
+	overflow: hidden;
+
+}
+
+.bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+	width: 45%;
+	text-align: center;
+
+  h4 {
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFF;
+  }
+}
+
+.bar-circle {
+  padding: 35px 0 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
