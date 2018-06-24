@@ -6,10 +6,9 @@ body {
 }
 .hidden {
   position: absolute;
-
   opacity: 0;
   display: none;
-  transition: all .3s ease;
+  transition: all 1s ease;
 }
 nav {
   z-index: 99;
@@ -40,23 +39,45 @@ nav li:hover {
       cursor: pointer;
     }
 .home {
-  border: 3px solid yellow;
   display: flex;
+  height: 90%;
+  width: 90%;
+  margin: 5%;
 
 }
-.home__title-container {
-    border: 3px solid green;
+.home__img {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    -webkit-transform: scale(.75);
+            transform: scale(.75);
+
+  }
+.home__title-container {
+    display: flex;
+    margin-left: 5%;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
   }
 .home__heading {
-    border: 3px solid purple;
-    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
     color: #FFF;
   }
 .home__sub-heading {
-    border: 3px solid red;
-    font-size: 3rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+    color: #00d8ff;
+  }
+.home__text {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
     color: #FFF;
   }
 .about__container {
@@ -139,7 +160,6 @@ nav li:hover {
   display: flex;
 }
 .main-container__home {
-    border: 3px solid blue;
     display: flex;
     position: absolute;
     height: 100%;
@@ -148,10 +168,11 @@ nav li:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     align-items: center;
     justify-content: center;
     transition: all .3s ease;
+    overflow: hidden;
   }
 .main-container__about {
 
@@ -176,7 +197,7 @@ nav li:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     transition: all .3s ease-out;
 
   }
@@ -189,7 +210,7 @@ nav li:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     transition: all .3s ease-out;
   }
 .main-container__contact {
@@ -201,7 +222,7 @@ nav li:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     transition: all .3s ease-out;
   }
 #bars {

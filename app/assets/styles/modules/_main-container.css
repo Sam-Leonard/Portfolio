@@ -1,7 +1,6 @@
 .main-container {
 
   &__home {
-    border: 3px solid blue;
     display: flex;
     position: absolute;
     height: 100%;
@@ -10,10 +9,11 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     align-items: center;
     justify-content: center;
     transition: all .3s ease;
+    overflow: hidden;
   }
 
   &__about {
@@ -40,7 +40,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     transition: all .3s ease-out;
 
   }
@@ -54,7 +54,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     transition: all .3s ease-out;
   }
 
@@ -67,7 +67,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #0677A1;
+    background-color: #252627;
     transition: all .3s ease-out;
   }
 }
