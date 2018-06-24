@@ -115,7 +115,6 @@ nav li:hover {
       display: flex;
     }
 .projects--header {
-    border: 3px solid blue;
     display: flex;
     text-transform: uppercase;
     font-weight: 700;
@@ -124,28 +123,64 @@ nav li:hover {
     justify-content: center;
     margin: 1% 0 0 0;
     padding: 0;
+    color: #FFF;
   }
 .projects__container {
-    margin: 0;
-    padding: 0;
-    border: 3px solid red;
+    margin: 3% 0 0 0;
+    padding: 3%;
     width: 96%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
 .projects__sub-container1 {
-    border: 3px solid yellow;
+    padding: 10px;
+    margin-right: 2%;
+    margin-bottom: 2%;
     display: flex;
     flex: 1;
     justify-content: center;
+    color: #FFF;
+
   }
 .projects__sub-container2 {
-    border: 3px solid purple;
+    padding: 10px;
+    margin-bottom: 2%;
     display: flex;
     flex: 1;
     justify-content: center;
+    color: #FFF;
   }
+.projects__sub-container3 {
+    padding: 10px;
+    margin-right: 2%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: #FFF;
+  }
+.projects__sub-container4 {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: #FFF;
+  }
+.projects__text-container {
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+.projects__text-container h2 {
+      color: #00d8ff;
+    }
 .resume {
   display: flex;
 }
