@@ -16,8 +16,8 @@ let contactSection = document.querySelector('#contact-section');
 
 
 home.addEventListener ('click', function() {
-  if (homeSection.classList.contains('hidden')) {
-  homeSection.classList.remove('hidden');
+  if (sectionContHome.classList.contains('hidden')) {
+
   sectionContHome.classList.remove('hidden');
 
   sectionContAbout.classList.add('hidden');
@@ -34,7 +34,7 @@ about.addEventListener ('click', function() {
   if (sectionContAbout.classList.contains('hidden')) {
 
   sectionContAbout.classList.remove('hidden');
-  homeSection.classList.add('hidden');
+
   sectionContHome.classList.add('hidden');
 
   sectionContProjects.classList.add('hidden');
@@ -49,7 +49,7 @@ projects.addEventListener ('click', function() {
   if (sectionContProjects.classList.contains('hidden')) {
 
   sectionContProjects.classList.remove('hidden');
-  homeSection.classList.add('hidden');
+
   sectionContHome.classList.add('hidden');
 
   sectionContAbout.classList.add('hidden');
@@ -64,7 +64,7 @@ resume.addEventListener ('click', function() {
   if (resumeSection.classList.contains('hidden')) {
   resumeSection.classList.remove('hidden');
   sectionContResume.classList.remove('hidden');
-  homeSection.classList.add('hidden');
+
   sectionContHome.classList.add('hidden');
 
   sectionContAbout.classList.add('hidden');
@@ -80,11 +80,11 @@ contact.addEventListener ('click', function() {
   if (contactSection.classList.contains('hidden')) {
   contactSection.classList.remove('hidden');
   sectionContContact.classList.remove('hidden');
-  homeSection.classList.add('hidden');
+  
   sectionContHome.classList.add('hidden');
 
   sectionContAbout.classList.add('hidden');
-  
+
   sectionContProjects.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');
