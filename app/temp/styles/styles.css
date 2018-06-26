@@ -136,6 +136,9 @@ nav li:hover {
     align-items: center;
     overflow: hidden;
   }
+.projects__container img{
+      opacity: .8;
+    }
 .projects__sub-container1 {
     padding: 10px;
     margin-right: 2%;
@@ -144,7 +147,6 @@ nav li:hover {
     flex: 1;
     justify-content: center;
     color: #FFF;
-
   }
 .projects__sub-container2 {
     padding: 10px;
@@ -184,9 +186,29 @@ nav li:hover {
 .resume {
   display: flex;
 }
-.contact {
-  display: flex;
-}
+.contact__sub-container1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+    color: #FFF;
+  }
+.contact__sub-container1 h2 {
+      margin: 0;
+      padding: 0;
+      color: #00d8ff;
+    }
+.contact__sub-container1 p {
+      width: 75%;
+    }
+.contact__sub-container2 {
+    padding-right: 7%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
 .main-container__home {
     display: flex;
     position: absolute;
@@ -243,6 +265,8 @@ nav li:hover {
   }
 .main-container__contact {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -285,4 +309,46 @@ nav li:hover {
 }
 .padding--right-small {
     padding-right: 1.5%;
+  }
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.form__input {
+    border: 2px solid red;
+    margin: 5px auto;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+.form__message {
+    display: flex;
+    align-content: flex-start;
+    margin: 5px auto;
+    height: 120px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+.form__submit {
+    height: 50px;
+    width: 100px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 5px auto;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    background-color: #00bee0;
+    color: #FFF;
+  }
+.form__submit:hover {
+    opacity: .8;
   }

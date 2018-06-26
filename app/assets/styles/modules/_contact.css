@@ -1,3 +1,29 @@
 .contact {
-  display: flex;
+
+  &__sub-container1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+    color: #FFF;
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      color: #00d8ff;
+    }
+
+    p {
+      width: 75%;
+    }
+  }
+
+  &__sub-container2 {
+    padding-right: 7%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
 }

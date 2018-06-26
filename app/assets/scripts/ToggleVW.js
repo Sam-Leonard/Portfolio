@@ -25,7 +25,7 @@ home.addEventListener ('click', function() {
   sectionContProjects.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');
-  contactSection.classList.add('hidden');
+  
   sectionContContact.classList.add('hidden');
   }
 });
@@ -40,7 +40,7 @@ about.addEventListener ('click', function() {
   sectionContProjects.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');
-  contactSection.classList.add('hidden');
+
   sectionContContact.classList.add('hidden');
   }
 });
@@ -55,7 +55,7 @@ projects.addEventListener ('click', function() {
   sectionContAbout.classList.add('hidden');
   resumeSection.classList.add('hidden');
   sectionContResume.classList.add('hidden');
-  contactSection.classList.add('hidden');
+
   sectionContContact.classList.add('hidden');
   }
 });
@@ -70,17 +70,17 @@ resume.addEventListener ('click', function() {
   sectionContAbout.classList.add('hidden');
 
   sectionContProjects.classList.add('hidden');
-  contactSection.classList.add('hidden');
+
   sectionContContact.classList.add('hidden');
 
   }
 });
 
 contact.addEventListener ('click', function() {
-  if (contactSection.classList.contains('hidden')) {
-  contactSection.classList.remove('hidden');
+  if (sectionContContact.classList.contains('hidden')) {
+
   sectionContContact.classList.remove('hidden');
-  
+
   sectionContHome.classList.add('hidden');
 
   sectionContAbout.classList.add('hidden');
