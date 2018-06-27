@@ -1,12 +1,12 @@
 nav {
   z-index: 99;
+  position: fixed;
   display: flex;
   top: 0;
   right: 0;
   height: 100%;
   padding: 10px;
   background-color: #181818;
-  position: fixed;
 
   ul {
     display: flex;

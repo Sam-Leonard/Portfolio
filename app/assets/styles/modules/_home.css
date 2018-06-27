@@ -2,19 +2,37 @@
 
   &__img {
     display: flex;
+
+    @mixin atSmall {
+    border: 7px solid blue;
+    width: 50%;
+    height: 50%;
+
+    }
+
+    @mixin atLarge {
     justify-content: center;
     align-items: center;
     flex: 3;
     transform: scale(.75);
-
+    }
   }
 
   &__title-container {
     display: flex;
+    flex-direction: column;
+
+    @mixin atSmall {
+      margin-left: 1%;
+    }
+
+    @mixin atLarge {
+
     margin-left: 10%;
     flex: 1;
     flex-direction: column;
     justify-content: center;
+    }
   }
 
   &__heading {
