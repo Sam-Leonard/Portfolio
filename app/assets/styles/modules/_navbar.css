@@ -1,28 +1,59 @@
 nav {
+  border: 5px solid yellow;
   z-index: 99;
   position: fixed;
-  display: flex;
-  top: 0;
-  right: 0;
-  height: 100%;
-  padding: 10px;
   background-color: #181818;
+  display: flex;
+
+  @add-mixin atSmall {
+    top: 0;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin atLarge {
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: auto;
+  }
 
   ul {
     display: flex;
     padding: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    @add-mixin atSmall {
+      border: 2px solid red;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @mixin atLarge {
+      flex-direction: column;
+      padding: 20px 3px;
+    }
   }
 
   li {
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 1.2rem;
     list-style: none;
     padding: 25px 0 25px 0;
     color: #00d8ff;
     font-weight: 700;
+    margin: 0;
+
+    @add-mixin atMedium {
+      padding: 10px 10px 10px 10px;
+    }
+
+    @mixin atLarge {
+      font-size: .9rem;
+      padding: 35% 15px;
+    }
   }
 
   li:hover {
