@@ -19,7 +19,11 @@
     display: flex;
 
     @mixin atSmall {
-
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 2;
+      height: 100%;
     }
 
     @mixin atLarge {
@@ -29,11 +33,16 @@
       flex: 2;
     }
 
-
     h3 {
 
       @mixin atSmall {
-        display: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #FFF;
       }
 
       @mixin atLarge {
@@ -46,151 +55,28 @@
       color: #FFF;
     }
     }
-  }
 
-  &__sub-container1__small {
-
-    @mixin atSmall {
-      background-color: #252627;
-      color: #FFF;
-      border: 2px solid green;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @mixin atLarge {
-      display: none !important;
-    }
-
-    h4 {
-
-      @mixin atSmall {
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-size: 2rem;
-        text-transform: uppercase;
-      }
-
-      @mixin atLarge {
-        display: none;
-      }
-    }
-
-
-    &__card1 {
-      padding: 10px;
-
-      h5 {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-
-      p {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-    }
-    &__card2 {
-      padding: 10px;
-
-      h5 {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-
-      p {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-    }
-    &__card3 {
-      padding: 10px;
-
-      h5 {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-
-      p {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-    }
-    &__card4 {
-      padding: 10px;
-
-      h5 {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-
-      p {
-        @mixin atSmall {
-          display: block;
-        }
-
-        @mixin atLarge {
-          display: none !important;
-        }
-      }
-    }
   }
 
   &__sub-container2 {
-    background-color: #252627;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 1;
+
     color: #FFF;
 
     @mixin atSmall {
-      padding: 0;
+      padding: 40px 0 300px 0;
+      background-color: #2e2f30;
+      flex: 1;
     }
 
     @mixin atLarge {
       padding: 0 20px 0 20px;
+      background-color: #252627;
+      flex: 2;
     }
 
     p {
