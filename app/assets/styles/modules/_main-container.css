@@ -59,9 +59,12 @@
 
   &__projects {
     display: flex;
+    background-color: #252627;
 
     @mixin atSmall {
-
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
     }
 
     @mixin atLarge {
@@ -74,15 +77,18 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #252627;
     transition: all .3s ease-out;
     }
   }
 
   &__contact {
     display: flex;
+    height: 100%;
+    width: 100%;
 
     @mixin atSmall {
+      background-color: #2e2f30;
+      flex-direction: column;
 
     }
 
@@ -90,8 +96,6 @@
       justify-content: space-around;
       align-items: center;
       position: absolute;
-      height: 100%;
-      width: 100%;
       top: 0;
       right: 0;
       left: 0;

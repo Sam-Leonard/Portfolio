@@ -3,11 +3,23 @@
   &__sub-container1 {
     display: flex;
     flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 5%;
     color: #FFF;
+
+    @mixin atSmall {
+      padding: 20% 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    @mixin atLarge {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 5%;
+    }
+
 
     h2 {
       margin: 0;
@@ -21,18 +33,31 @@
   }
 
   &__sub-container2 {
-    padding-right: 7%;
-    display: flex;
-    justify-content: center;
-    flex: 1;
+
+    @mixin atSmall {
+      padding: 1  0%;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      margin-bottom: 50px;
+    }
+
+    @mixin atLarge {
+      padding-right: 7%;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+
 
     iframe {
       width: 650px;
       height: 800px;
 
       @mixin atSmall {
-        width: 400px;
+        width: 325px;
         height: 500px;
+        border-radius: 5px;
       }
 
       @mixin atLarge {

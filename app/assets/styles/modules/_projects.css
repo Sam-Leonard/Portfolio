@@ -2,79 +2,221 @@
 
   &--header {
     display: flex;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 3rem;
-    width: 96%;
     justify-content: center;
-    margin: 1% 0 0 0;
-    padding: 0;
+    text-transform: uppercase;
     color: #FFF;
+
+    @mixin atSmall {
+      text-decoration: underline;
+      text-decoration-color: #00d8ff;
+      font-size: 2rem;
+      width: 100%;
+      font-weight: 400;
+      margin-bottom: 15%;
+    }
+
+    @mixin atLarge {
+      font-weight: 700;
+      font-size: 3rem;
+      width: 96%;
+      margin: 1% 0 0 0;
+      padding: 0;
+    }
+
   }
 
   &__container {
-    margin: 3% 0 0 0;
-    padding: 3%;
-    width: 96%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+
+    @mixin atSmall {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    @mixin atLarge {
+      margin: 3% 0 0 0;
+      padding: 3%;
+      width: 96%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
 
     img{
       opacity: .8;
+      border-radius: 10px;
+
+      @mixin atSmall {
+        width: 100%;
+        height: auto;
+        order: 3;
+      }
+
+      @mixin atLarge {
+
+      }
+
     }
   }
 
   &__sub-container1 {
-    padding: 10px;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    display: flex;
-    flex: 1;
-    justify-content: center;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @mixin atSmall {
+      padding: 10px 25px;
+      overflow: hidden;
+    }
+
+    @mixin atLarge {
+      padding: 10px;
+      margin-right: 2%;
+      margin-bottom: 2%;
+      flex: 1;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #00d8ff;
+
+      @mixin atSmall {
+        order: 1;
+        font-size: 1.2rem;
+      }
+
+      @mixin atLarge {
+
+      }
+    }
   }
 
   &__sub-container2 {
-    padding: 10px;
-    margin-bottom: 2%;
-    display: flex;
-    flex: 1;
-    justify-content: center;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @mixin atSmall {
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    @mixin atLarge {
+      padding: 10px;
+      margin-bottom: 2%;
+      flex: 1;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #00d8ff;
+
+      @mixin atSmall {
+        order: 1;
+        font-size: 1.2rem;
+      }
+
+      @mixin atLarge {
+
+      }
+    }
   }
 
   &__sub-container3 {
-    padding: 10px;
-    margin-right: 2%;
-    display: flex;
-    flex: 1;
-    justify-content: center;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @mixin atSmall {
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    @mixin atLarge {
+      padding: 10px;
+      margin-right: 2%;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #00d8ff;
+
+      @mixin atSmall {
+        order: 1;
+        font-size: 1.2rem;
+      }
+
+      @mixin atLarge {
+
+      }
+    }
   }
 
   &__sub-container4 {
-    padding: 10px;
-    display: flex;
-    flex: 1;
-    justify-content: center;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @mixin atSmall {
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    @mixin atLarge {
+      padding: 10px;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #00d8ff;
+
+      @mixin atSmall {
+        order: 1;
+        font-size: 1.2rem;
+      }
+
+      @mixin atLarge {
+
+      }
+    }
   }
 
   &__text-container {
-    padding-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    h2 {
-      color: #00d8ff;
+    @mixin atSmall {
+      order: 3;
+      padding-bottom: 15%;
     }
+
+    @mixin atLarge {
+      padding-left: 2%;
+
+    }
+
+
+
 
   }
 }
