@@ -25,5 +25,39 @@
     display: flex;
     justify-content: center;
     flex: 1;
+
+    iframe {
+      width: 650px;
+      height: 800px;
+
+      @mixin atSmall {
+        width: 400px;
+        height: 500px;
+      }
+
+      @mixin atLarge {
+
+      }
+    }
+
   }
+
+  .gmap_canvas {
+    width: 650px;
+    height: 800px;
+    overflow: hidden;
+    background: none !important;
+
+    @mixin atSmall {
+      width: 250px;
+      height: 400px;
+    }
+
+    @mixin atLarge {
+      width: 750px;
+      height: 900px;
+    }
+  }
+
+  .mapouter{text-align:right;height:800px;width:650px;}
 }
