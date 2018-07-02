@@ -9,7 +9,7 @@ let contact = document.querySelector('#contact');
 
 
 window.onload = function() {
-  if (window.innerWidth > 1200) {
+  if (window.innerWidth >= 1200) {
     sectionContHome.classList.remove('hidden');
     sectionContAbout.classList.add('hidden');
     sectionContProjects.classList.add('hidden');

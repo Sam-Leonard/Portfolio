@@ -16,7 +16,8 @@
   }
 
   @mixin atLarge {
-    margin: 2em auto;
+    height: 50%;
+    margin: 0 auto;
   }
 }
 

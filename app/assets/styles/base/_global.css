@@ -4,3 +4,18 @@
 body {
   margin: 0;
 }
+a:link {
+  color: #FFF;
+}
+a:hover {
+  color: #FFF;
+}
+a:active {
+  color: #FFF;
+}
+a:visited {
+  color: #FFF;
+}
+a{
+  text-decoration: none;
+}

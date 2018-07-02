@@ -7,6 +7,21 @@ body {
 body {
   margin: 0;
 }
+a:link {
+  color: #FFF;
+}
+a:hover {
+  color: #FFF;
+}
+a:active {
+  color: #FFF;
+}
+a:visited {
+  color: #FFF;
+}
+a{
+  text-decoration: none;
+}
 .hidden {
   position: absolute;
   opacity: 0;
@@ -804,7 +819,8 @@ nav li:hover {
   }
 @media (min-width: 1200px) {
 #bars {
-    margin: 2em auto
+    height: 50%;
+    margin: 0 auto
 }
   }
 .bar {
