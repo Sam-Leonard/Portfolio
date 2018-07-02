@@ -17,7 +17,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding-left: 5%;
+      padding: 0 0 0 5%;
+      margin-left: 2%;
     }
 
 
@@ -33,35 +34,43 @@
   }
 
   &__sub-container2 {
+    flex: 1;
 
     @mixin atSmall {
-      padding: 1  0%;
       display: flex;
       justify-content: center;
-      flex: 1;
       margin-bottom: 50px;
     }
 
+    @mixin atMedium {
+      margin-bottom: 100px;
+    }
+
     @mixin atLarge {
-      padding-right: 7%;
+      padding-right: 10%;
       display: flex;
       justify-content: center;
       flex: 1;
+      margin-bottom: 0;
     }
 
 
     iframe {
-      width: 650px;
-      height: 800px;
+      border-radius: 5px;
 
       @mixin atSmall {
         width: 325px;
         height: 500px;
-        border-radius: 5px;
+      }
+
+      @mixin atMedium {
+        width: 800px;
+        height: 500px;
       }
 
       @mixin atLarge {
-
+        width: 650px;
+        height: 800px;
       }
     }
 
@@ -71,18 +80,14 @@
     width: 650px;
     height: 800px;
     overflow: hidden;
-    background: none !important;
+    background: none;
 
-    @mixin atSmall {
-      width: 250px;
-      height: 400px;
-    }
-
-    @mixin atLarge {
-      width: 750px;
-      height: 900px;
-    }
   }
 
-  .mapouter{text-align:right;height:800px;width:650px;}
+  .mapouter {
+    text-align: right;
+    height: 800px;
+    width: 650px;
+  }
+
 }
