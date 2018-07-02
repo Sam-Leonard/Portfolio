@@ -4,7 +4,8 @@ module.exports = {
   entry: {
     ToggleVW: "./app/assets/scripts/ToggleVW.js",
     SmoothScroll: "./app/assets/scripts/SmoothScroll",
-    Skills: "./app/assets/scripts/Skills"
+    Skills: "./app/assets/scripts/Skills",
+    HamburgMenu: "./app/assets/scripts/HamburgMenu"
     // ex. Vendor: "./app/assets/scripts/Vendor.js"
   },
   output: {

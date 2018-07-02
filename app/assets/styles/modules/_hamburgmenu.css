@@ -1,0 +1,184 @@
+.hamburg {
+
+  @mixin atSmall {
+    position: fixed;
+    top: 8px;
+    right: 14px;
+    z-index: 101;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  @mixin atMedium {
+    display: none;
+  }
+
+  @mixin atLarge {
+    display: none;
+  }
+
+
+  &__bar1 {
+
+    @mixin atSmall {
+      height: 3px;
+      width: 30px;
+      background-color: #00d8ff;
+      border-radius: 25%;
+      margin: 6px auto;
+      transform: rotate(0) translate(0, 0);
+      transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+
+    @mixin atLarge {
+      display: none;
+    }
+  }
+
+  &__bar2 {
+
+    @mixin atSmall {
+      height: 3px;
+      width: 30px;
+      background-color: #00d8ff;
+      border-radius: 25%;
+      margin: 6px auto;
+      transform: rotate(0) translate(0, 0);
+      transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+
+    @mixin atLarge {
+      display: none;
+    }
+  }
+
+  &__bar3 {
+
+    @mixin atSmall {
+      height: 3px;
+      width: 30px;
+      background-color: #00d8ff;
+      border-radius: 25%;
+      margin: 6px auto;
+      transform: rotate(0) translate(0, 0);
+      transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+
+    @mixin atLarge {
+      display: none;
+    }
+  }
+
+  &__menu {
+
+    @mixin atSmall {
+      background-color: #181818;
+      z-index: 100;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100px;
+      height: 300px;
+      opacity: .9;
+      border-bottom-left-radius: 20px;
+      top: 0;
+      right: 0;
+      transform: translateY(-300px);
+      transition: transform .35s cubic-bezier(0.785, 0.135, 0.150, 0.860), opacity .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+
+    @mixin atLarge {
+      display: none;
+    }
+
+    ul {
+
+      @mixin atSmall {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+      }
+
+      @mixin atMedium {
+        display: none;
+      }
+
+      @mixin atLarge {
+        display: none;
+      }
+    }
+
+    li {
+
+      @mixin atSmall {
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        list-style: none;
+        padding: 35px 0 0 0;
+        cursor: pointer;
+      }
+
+      @mixin atMedium {
+        display: none;
+      }
+
+      @mixin atLarge {
+        display: none;
+      }
+    }
+
+    li:hover {
+      color: #00d8ff;
+    }
+
+    li:active {
+      color: #00d8ff;
+    }
+  }
+}
+
+/* Rotate first bar */
+.change1 {
+  transform: rotate(-45deg) translate(-5px, 9px);
+  transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+/* Fade out the second bar */
+.change2 {
+  opacity: 0;
+  transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+/* Rotate last bar */
+.change3 {
+  transform: rotate(45deg) translate(-3px, -9px);
+  transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.transition-from-top {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}

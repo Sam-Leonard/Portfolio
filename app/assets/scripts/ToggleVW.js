@@ -23,7 +23,7 @@ window.onload = function() {
 };
 
 home.addEventListener ('click', function() {
-  if (sectionContHome.classList.contains('hidden')) {
+  if (window.innerWidth >= 1200) {
   sectionContHome.classList.remove('hidden');
   sectionContAbout.classList.add('hidden');
   sectionContProjects.classList.add('hidden');
@@ -32,7 +32,7 @@ home.addEventListener ('click', function() {
 });
 
 about.addEventListener ('click', function() {
-  if (sectionContAbout.classList.contains('hidden')) {
+  if (window.innerWidth >= 1200) {
   sectionContAbout.classList.remove('hidden');
   sectionContHome.classList.add('hidden');
   sectionContProjects.classList.add('hidden');
@@ -41,7 +41,7 @@ about.addEventListener ('click', function() {
 });
 
 projects.addEventListener ('click', function() {
-  if (sectionContProjects.classList.contains('hidden')) {
+  if (window.innerWidth >= 1200) {
   sectionContProjects.classList.remove('hidden');
   sectionContHome.classList.add('hidden');
   sectionContAbout.classList.add('hidden');
@@ -51,7 +51,7 @@ projects.addEventListener ('click', function() {
 
 
 contact.addEventListener ('click', function() {
-  if (sectionContContact.classList.contains('hidden')) {
+  if (window.innerWidth >= 1200) {
   sectionContContact.classList.remove('hidden');
   sectionContHome.classList.add('hidden');
   sectionContAbout.classList.add('hidden');

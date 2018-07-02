@@ -6,15 +6,24 @@
 
     @mixin atSmall {
     margin: 0;
-    padding: 0;
+    padding: 50px 0 0 0;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 80px;
     height: 800px;
     width: 100%;
     justify-content: center;
     align-items: center;
+    }
 
+    @mixin atMedium {
+      margin: 0;
+      padding: 80px 0 0 0;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 800px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
 
     @mixin atLarge {

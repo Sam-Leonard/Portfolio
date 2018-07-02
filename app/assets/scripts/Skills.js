@@ -83,10 +83,15 @@
 		}
 	};
 
-	
+
 
 	let about = document.querySelector('#about');
 	about.addEventListener('click', function() {
+		var circularBars = new CircularSkillBar( "#bars .bar" );
+	});
+
+	let about2 = document.querySelector('#about2');
+	about2.addEventListener('click', function() {
 		var circularBars = new CircularSkillBar( "#bars .bar" );
 	});
 
