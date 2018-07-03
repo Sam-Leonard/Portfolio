@@ -1,6 +1,7 @@
 .hamburg {
 
   @mixin atSmall {
+    display: block;
     position: fixed;
     top: 8px;
     right: 14px;

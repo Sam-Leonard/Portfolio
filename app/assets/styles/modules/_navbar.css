@@ -33,7 +33,7 @@ nav {
     padding: 0;
 
     @mixin atSmall {
-      display: hidden;
+      display: none;
     }
 
     @mixin atMedium {
