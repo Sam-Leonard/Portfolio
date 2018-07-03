@@ -9,5 +9,4 @@ hamBurg.addEventListener('click', function() {
   hamBurgBarTwo.classList.toggle('change2');
   hamBurgBarThree.classList.toggle('change3');
   hamBurgMenu.classList.toggle('transition-from-top');
-  console.log(hamBurgMenu)
 });

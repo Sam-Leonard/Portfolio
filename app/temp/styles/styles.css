@@ -727,7 +727,7 @@ nav li:active {
     padding: 50px 0 0 0;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 800px;
+    height: 1000px;
     width: 100%;
     justify-content: center;
     align-items: center
