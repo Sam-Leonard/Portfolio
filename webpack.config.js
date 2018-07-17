@@ -5,7 +5,8 @@ module.exports = {
     ToggleVW: "./app/assets/scripts/ToggleVW.js",
     SmoothScroll: "./app/assets/scripts/SmoothScroll",
     Skills: "./app/assets/scripts/Skills",
-    HamburgMenu: "./app/assets/scripts/HamburgMenu"
+    HamburgMenu: "./app/assets/scripts/HamburgMenu",
+    RefreshBrowser: "./app/assets/scripts/RefreshBrowser"
     // ex. Vendor: "./app/assets/scripts/Vendor.js"
   },
   output: {
