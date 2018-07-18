@@ -23,7 +23,7 @@
     }
 
     @mixin atLarge {
-      font-weight: 700;
+      font-weight: 400;
       font-size: 3rem;
       width: 96%;
       margin: 1% 0 0 0;
@@ -62,7 +62,8 @@
       }
 
       @mixin atLarge {
-        width: 55%;
+        margin-left: 20%;
+        width: 65%;
         height: auto;
       }
     }
@@ -221,8 +222,9 @@
     }
 
     @mixin atLarge {
+      width: 50%;
       padding-bottom: 0;
-      font-size: ;
+      font-size: 1.1rem;
     }
   }
 }

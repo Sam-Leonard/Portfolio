@@ -90,10 +90,9 @@
 		var circularBars = new CircularSkillBar( "#bars .bar" );
 	});
 
-	let about2 = document.querySelector('#about2');
-	about2.addEventListener('click', function() {
-		var circularBars = new CircularSkillBar( "#bars .bar" );
-	});
+	document.addEventListener( "DOMContentLoaded", function() {
+			var circularBars = new CircularSkillBar( "#bars .bar" );
+		});
 
 
 
