@@ -419,7 +419,7 @@ nav li:active {
   }
 @media (min-width: 800px) {
 .projects__container img {
-        width: 75%
+        width: 100%
     }
   }
 @media (min-width: 1200px) {
@@ -490,7 +490,7 @@ nav li:active {
 .projects__sub-container2 {
       width: 45%;
       padding: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       margin-right: 2%;
       flex-wrap: wrap
   }

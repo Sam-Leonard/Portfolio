@@ -58,7 +58,7 @@
       }
 
       @mixin atMedium {
-        width: 75%;
+        width: 100%;
       }
 
       @mixin atLarge {
@@ -74,10 +74,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
     @mixin atSmall {
       padding: 10px 25px;
       overflow: hidden;
     }
+
     @mixin atLarge {
       width: 45%;
       padding: 10px;
@@ -115,7 +118,7 @@
     @mixin atLarge {
       width: 45%;
       padding: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       margin-right: 2%;
       flex-wrap: wrap;
     }
